@@ -3,21 +3,39 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="title-bar">
+    <p class="title-text">Jesus Was a Refugee</p>
+  </div>
+  <div class="form-container">
+    <form>
+      <div id="choose-label">
+        <h1 class="choose-sticker">Choose Your Bumper Sticker</h1>
+        <div class="arrow-down"></div>
+      </div>
+      <label class="sticker-radio">
+        <input type="radio" name="sticker" value="1" />
+        <img src="/images/sticker1.png">
+      </label>
+      <label class="sticker-radio">
+        <input type="radio" name="sticker" value="2" />
+        <img src="/images/sticker2.png">
+      </label>
+      <div id="lower-form">
+        <label>name<span class="asterix"> *</span></label>
+        <input type="text" required>
+        <label>email<span class="asterix">*</span></label>
+        <input type="email" required>
+        <label>address line 1<span class="asterix">*</span></label>
+        <input type="text" required>
+        <label>address line 2&nbsp</label>
+        <input type="text">
+        <label>city<span class="asterix">*</span></label>
+        <input type="text" required>
+        <label>zip<span class="asterix">*</span></label>
+        <input type="text" required>
+        <input class="submit-button" type="submit" value="Get Your Bumper Sticker">
+      </div>
+    </form>
+  </div>
 
 </div>
