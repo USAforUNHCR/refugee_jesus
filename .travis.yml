@@ -3,7 +3,7 @@ rvm:
 - 2.2.2
 before_script:
 - chmod +x ./script/cibuild
-install: bundle install
+
 env global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - secure: epoQI+ssCHGbLTpP+noIGvgw6Ch+WtTunKiCjLWtGqoiDwFKKyw+i5wmkRcHeCMnOAqV0ot/AzRiwXptnYTrICmbKE0GtQs8ToTG1oP985NXOrUKK6nBn0M/Znjb/5KJ/xf9UMh6nJU7Om5+Dk5vzHUgtjwFVo8p3ehNQ2cg6B8m+NNcqblzLv3DBhuKdk7tcpkwhqzBEsFQcBLkMfNy12zOitI7xnlrmX2Mvfr712Vj6FC7HK0AnXtiSFr6NdPkWG4i9EmcckGFq98xp/cYfCeyKXXeFCgQXHrqbLdJD1gWak+shLI1doRvJTH5TaJkt5F8cR1E4j7unIuvpycrsixmJdG5BDuWNRtv6bGlCg2KrZ+SckqNX6Xwf3v3ptuK8zNnzau7EHi5e+SLU9oNfyDG2NFIoN8MrjyuU0hhbs9Jd6YB/kGKVf/S+2017+ewmCbHKG+1wLNd3jFlxpA6sqJU4AZlKO+QGKVYAlwWF+LkCVKY8VlcOpHuCNJCfveI9AY/XalK1uUuYPSIbTPe5x7kSOdL3k0eg3TZs/Z7YV2F7V5uFDqN5pOCl1SHUXPBJdHbLNomD3DXFFU6F2iOderWryBJ5rBkxV3ySpE3x2A3G18O1iojqI4Bdrje8AI8j2/HOtDW2A9E/lXqYaQzzWhDUMvr/drMw4osY7028YE=
