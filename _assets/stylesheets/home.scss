@@ -1,7 +1,7 @@
 $background: #ffffff;
 $foreground: #40b6ed;
 $break-large: 700px;
-$break-med: 430px;
+$break-med: 480px;
 $break-small: 400px;
 
 .home{
@@ -136,6 +136,12 @@ label.sticker-radio > input:checked + img{
   }
   @media screen and(max-width: $break-large){
     font-size: 18pt;
+  }
+  @media screen and(max-width: $break-med){
+    font-size: 16pt;
+  }
+  @media screen and(max-width: $break-small){
+    font-size: 12pt;
   }
 }
 
