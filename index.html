@@ -3,6 +3,9 @@ layout: default
 ---
 
 <div class="home">
+  <div id="popemobile">
+    {% image popemobile.png%}
+  </div>
   <div class="title-bar">
     <p class="title-text">Jesus Was a Refugee</p>
   </div>
@@ -14,11 +17,11 @@ layout: default
       </div>
       <label class="sticker-radio">
         <input type="radio" name="sticker" value="1" />
-        <img src="/images/refugee-jesus-bumper4.jpg">
+        {% image refugee-jesus-bumper4.jpg %}
       </label>
       <label class="sticker-radio">
         <input type="radio" name="sticker" value="2" />
-        <img src="/images/refugee-jesus-bumper5.jpg">
+        {% image refugee-jesus-bumper5.jpg %}
       </label>
       <div id="lower-form">
         <label>name<span class="asterix"> *</span></label>
