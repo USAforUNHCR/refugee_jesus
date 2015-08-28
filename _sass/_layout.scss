@@ -93,8 +93,8 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0; 
+    // border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
 }
 
 .footer-heading {
@@ -134,6 +134,8 @@
 .footer-col-3 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
     width:         calc(45% - (#{$spacing-unit} / 2));
+    text-align: right;
+    // padding-right: 4vw;
 }
 
 @include media-query($on-laptop) {

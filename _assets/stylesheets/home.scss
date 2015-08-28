@@ -1,5 +1,5 @@
 $background: #ffffff;
-$foreground: #40b6ed;
+$foreground: #40bc65;
 $break-large: 700px;
 $break-med: 480px;
 $break-small: 400px;
@@ -14,11 +14,12 @@ $break-small: 400px;
   background: linear-gradient($foreground, white);
   & img{
     height:50vh;
+    width: auto;
   }
 }
 
 .wrapper{
-  background: $foreground;
+  // background: $foreground;
 }
 
 .title-bar{
@@ -63,13 +64,33 @@ label.sticker-radio > input:checked + img{
 
 .form-container{
   text-align: center;
-  padding: 4vh 4vw 4vh 4vw;
+  padding: 1vh 4vw 4vh 4vw;
   max-width: 740px;
   margin:auto;
 }
 
+.quote-marks{
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30pt;
+}
+
+.quote{
+  margin: auto;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: lighter;
+  font-size: 26pt;
+  padding-bottom: 8vh;
+}
+
 #choose-label{
   margin-bottom: 3vh;
+}
+
+.atrib{
+  font-family: sans-serif;
+  font-size: 18pt;
 }
 
 .choose-sticker{
@@ -152,4 +173,22 @@ label.sticker-radio > input:checked + img{
 
 .asterix{
   color: red;
+}
+
+.site-footer{
+  & a{
+    font-size: 16pt;
+    margin-right: 2vw;
+    &:hover{
+      text-decoration: none;
+      cursor: hand;}
+
+      }
+}
+
+.footer-col-1{
+  & img{
+    padding: 2%;
+    width: 50%;
+  }
 }
