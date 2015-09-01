@@ -12,12 +12,20 @@ $break-small: 400px;
 #popemobile{
   background-color: $foreground;
   background: linear-gradient($foreground, white);
+  
+}
+#image-container{
+  margin: auto;
+  width: 50vw;
   & img{
-    height:50vh;
-    width: auto;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    // height:auto;
+    // width: auto;
   }
 }
-
 .wrapper{
   // background: $foreground;
 }
@@ -179,6 +187,7 @@ label.sticker-radio > input:checked + img{
   & a{
     font-size: 16pt;
     margin-right: 2vw;
+    padding-top: 20vh;
     &:hover{
       text-decoration: none;
       cursor: hand;}
@@ -189,6 +198,10 @@ label.sticker-radio > input:checked + img{
 .footer-col-1{
   & img{
     padding: 2%;
-    width: 50%;
+    width: 30%;
+  }
+  & span{
+    width:100%;
+    text-align: left;
   }
 }
