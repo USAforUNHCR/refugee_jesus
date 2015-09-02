@@ -23,13 +23,13 @@ layout: default
         <br>
         <span class="atrib"> - Pope Francis</span>
       </p>
-    <form>
+    <form id="signup-form">
       <div id="choose-label">
         <h1 class="choose-sticker">Choose Your Bumper Sticker</h1>
         <div class="arrow-down"></div>
       </div>
       <label class="sticker-radio">
-        <input type="radio" name="sticker" value="1" />
+        <input type="radio" name="sticker" value="1" checked="checked" />
         {% image refugee-jesus-bumper4.jpg %}
       </label>
       <label class="sticker-radio">
@@ -38,17 +38,17 @@ layout: default
       </label>
       <div id="lower-form">
         <label>name<span class="asterix"> *</span></label>
-        <input type="text" required>
+        <input type="text" name="NAME" required>
         <label>email<span class="asterix">*</span></label>
-        <input type="email" required>
+        <input type="email" name="EMAIL" required>
         <label>address line 1<span class="asterix">*</span></label>
-        <input type="text" required>
+        <input type="text" name="ADDR1" required>
         <label>address line 2&nbsp</label>
         <input type="text">
         <label>city<span class="asterix">*</span></label>
-        <input type="text" required>
+        <input type="text" name="ADDR2" required>
         <label>zip<span class="asterix">*</span></label>
-        <input type="text" required>
+        <input type="text" name="ZIP" required>
         <input class="submit-button" type="submit" value="Get Your Bumper Sticker">
       </div>
     </form>
