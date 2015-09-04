@@ -135,6 +135,7 @@ label.sticker-radio > input:checked + img{
   // width: 50vw;
   line-height: normal;
   border-radius: 8px;
+  transition: height 3s;
   & label{
     margin-bottom: 2vh;
     padding: 2px;
@@ -181,6 +182,10 @@ label.sticker-radio > input:checked + img{
 
 .asterix{
   color: red;
+}
+
+#conf-message{
+  display: none;
 }
 
 .site-footer{
