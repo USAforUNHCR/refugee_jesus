@@ -2,21 +2,9 @@
 
 $(document).ready(function(){
   console.log("ready");
-  submitEventListenerTest();
+  submitEventListener();
 
 });
-
-function submitEventListenerTest(){
-  $button = $(".submit-button");
-
-  $button.click(function(event){
-    event.preventDefault();
-    $('.submit-button').slideUp(700, function(){
-      $('#conf-message').html("We sent you an email. Please confirm your address to receive your sticker").slideDown(700);
-    });
-    
-  });
-}
 
 function submitEventListener(){
   $form = $("#signup-form");
@@ -37,13 +25,19 @@ function submitEventListener(){
       success: function(data){
 
         if (data.result != "success") {
-          $('#conf-message').html('There was an error with your request, please try again. If the problem persists, please contact us.').slideDown(1000, function(){
+         $button.click(function(event){
+    event.preventDefault();
+      $('.submit-button').val('Please Wait...').prop('disabled',true);
+      $('#conf-message').html('').slideUp(700);
+      $('#conf-message').html("Something went wrong, please try to submit your details again. If the problem persists, please contact us.").slideDown(700, function(){
+        $('.submit-button').val('Get Your Bumper Sticker').prop('disabled',false);
+      });
 
           });
         }
         else {
-          $('form').slideDown(800, function(){
-            $('#conf-message').html('We sent you an email, please confirm to receive your bumper sticker!').slideDown(1000);
+          $('.submit-button').slideUp(700, function(){
+            $('#conf-message').html("We sent you an email. Please confirm your email address to receive your sticker").slideDown(700);
           });
           
         }
