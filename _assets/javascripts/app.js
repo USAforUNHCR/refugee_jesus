@@ -37,7 +37,7 @@ function submitEventListener(){
         }
         else {
           $('.submit-button').slideUp(700, function(){
-            $('#conf-message').html("We sent you an email. Please confirm your email address to receive your sticker").slideDown(700);
+            $('#conf-message').html("Thanks! We sent you an email. Please confirm your email address to receive your free sticker").slideDown(700);
           });
           
         }
