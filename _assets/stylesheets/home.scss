@@ -186,6 +186,11 @@ label.sticker-radio > input:checked + img{
 
 #conf-message{
   display: none;
+  margin: 2vh 4vw 2vh 4vw;
+  background-color: $background;
+  color: $foreground;
+  padding: 2vh 2vw 2vh 2vw;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .site-footer{
@@ -196,8 +201,10 @@ label.sticker-radio > input:checked + img{
     &:hover{
       text-decoration: none;
       cursor: hand;}
-
-      }
+    }
+    @media screen and(max-width: $break-med){
+      font-size: 14pt;
+    }
 }
 
 .footer-col-1{
