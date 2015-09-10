@@ -25,14 +25,10 @@ function submitEventListener(){
       success: function(data){
 
         if (data.result != "success") {
-         $button.click(function(event){
-    event.preventDefault();
-      $('.submit-button').val('Please Wait...').prop('disabled',true);
-      $('#conf-message').html('').slideUp(700);
-      $('#conf-message').html("Something went wrong, please try to submit your details again. If the problem persists, please contact us.").slideDown(700, function(){
-        $('.submit-button').val('Get Your Bumper Sticker').prop('disabled',false);
-      });
-
+          $('.submit-button').val('Please Wait...').prop('disabled',true);
+          $('#conf-message').html('').slideUp(700);
+          $('#conf-message').html("Something went wrong, please try to submit your details again. If the problem persists, please contact us.").slideDown(700, function(){
+            $('.submit-button').val('Get Your Bumper Sticker').prop('disabled',false);
           });
         }
         else {
