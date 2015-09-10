@@ -217,3 +217,21 @@ label.sticker-radio > input:checked + img{
     text-align: left;
   }
 }
+
+// Styles for thank-you page
+.thank-you-title{
+  font-family: 'Montserrat', sans-serif;
+  background-color: $foreground;
+  font-size: 48pt;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 7vh;
+}
+
+.thank-you-text{
+  font-size: 36pt;
+  padding-top: 5vh;
+  text-align: center;
+  height: 35vh;
+}
+
