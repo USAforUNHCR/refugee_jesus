@@ -23,7 +23,6 @@ function submitEventListener(){
       contentType: "application/json; charset=utf-8",
       error: function(err) {console.log("something went wrong")},
       success: function(data){
-
         if (data.result != "success") {
           $('.submit-button').val('Please Wait...').prop('disabled',true);
           $('#conf-message').html('').slideUp(700);
