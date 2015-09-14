@@ -3,6 +3,7 @@ $foreground: #40bc65;
 $break-large: 700px;
 $break-med: 480px;
 $break-small: 400px;
+$break-very-small: 380px;
 
 .home{
   text-align: center;
@@ -45,6 +46,9 @@ $break-small: 400px;
   font-family: 'Montserrat', sans-serif;
   text-shadow: 0 1px 0 darken($foreground, 3%), 0 2px 0 darken($foreground,5%),
    0 3px 0 darken($foreground, 8%);
+  @media screen and(max-width: $break-small){
+    font-size: 3em;
+  }
 }
 
 label.sticker-radio > input {
@@ -90,6 +94,9 @@ label.sticker-radio > input:checked + img{
   font-weight: lighter;
   font-size: 26pt;
   padding-bottom: 8vh;
+  @media screen and(max-width: $break-small){
+    font-size: 22pt;
+  }
 }
 
 #choose-label{
@@ -143,6 +150,9 @@ label.sticker-radio > input:checked + img{
     margin-right: 2%; 
     text-align: right;
     display: inline-block;
+    @media screen and(max-width: $break-very-small){
+      width: 35%;
+    }
   }
   @media screen and(max-width: $break-large){
     font-size: 14pt;
@@ -152,6 +162,9 @@ label.sticker-radio > input:checked + img{
   }
   @media screen and(max-width: $break-med){
     font-size: 11pt;
+  }
+  @media screen and(max-width: $break-very-small){
+    margin: 0 1vw 0 1vw;
   }
 }
 
@@ -177,6 +190,8 @@ label.sticker-radio > input:checked + img{
   }
   @media screen and(max-width: $break-small){
     font-size: 12pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -224,14 +239,19 @@ label.sticker-radio > input:checked + img{
   background-color: $foreground;
   font-size: 48pt;
   text-align: center;
-  padding-top: 10vh;
-  padding-bottom: 7vh;
+  padding: 10vh 2vw 7vh 2vw;
+  @media screen and(max-width: $break-small){
+    font-size: 32pt;
+  }
 }
 
 .thank-you-text{
   font-size: 36pt;
-  padding-top: 5vh;
+  padding: 5vh 4vw 0 4vw;
   text-align: center;
   height: 35vh;
+  @media screen and(max-width: $break-small){
+    font-size: 24pt;
+  }
 }
 
