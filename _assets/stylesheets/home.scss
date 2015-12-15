@@ -40,7 +40,6 @@ h2{
   text-align: center;
   padding: 0 0 3vh 0;
   width: 100%;
-  // margin-bottom: 3vh;
    position: absolute;
    top: 22vw;
    left: 50%; 
@@ -109,7 +108,7 @@ h2{
     color: white;
     top: 40vw;
     left: 50%; 
-    webkit-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%); 
     -ms-transform: translate(-50%, -50%); 
     -o-transform: translate(-50%, -50%); 

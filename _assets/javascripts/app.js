@@ -100,7 +100,6 @@ function splitNames(name){
 
 function processResponse(status,destination){
   var form = $('.' + destination + '-form');
-  debugger; 
   var msg = $('.' + destination + '-msg');
 
   
