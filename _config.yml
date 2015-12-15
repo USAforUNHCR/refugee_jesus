@@ -15,7 +15,7 @@ exclude: [vendor,'Gemfile.lock','Gemfile','Readme.md']
 # jekyll-assets _config
 assets:
   
-  js_compressor: 'uglifier'
-  css_compressor: 'sass'
+  # js_compressor: 'uglifier'
+  # css_compressor: 'sass'
 
   gzip: [ text/css, application/javascript ]

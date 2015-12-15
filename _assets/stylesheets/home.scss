@@ -93,6 +93,9 @@ h2{
   }
 }
 
+.story-msg{
+  padding-top: 0.4em;
+}
 
 .card-image{
   position: relative;
@@ -209,18 +212,11 @@ $rotate-image: 5deg;
   }
 }
 
+.celebrate-msg{
+}
+
 .site-footer{
   background: $background;
-  & a{
-    font-size: 16pt;
-    padding: 0.5em;
-    &:hover{
-      text-decoration: none;
-      cursor: hand;}
-    }
-    @media screen and(max-width: $break-med){
-      font-size: 14pt;
-    }
 }
 
 .footer-center{
@@ -233,5 +229,28 @@ $rotate-image: 5deg;
 
 .footer-right{
   text-align: center;
+  line-height: 6em;
+  & a{
+    font-size: 16pt;
+    padding: 0.5em;
+    &:hover{
+      text-decoration: none;
+      cursor: hand;}
+    }
+    @media screen and(max-width: $break-med){
+      font-size: 14pt;
+    }
 }
 
+.footer-left{
+  text-align: center;
+  color: white;
+   line-height: 6em;
+  & span{
+   margin: auto;
+  }
+  & img{
+    margin: auto;
+    width: 15vw;
+  }
+}
