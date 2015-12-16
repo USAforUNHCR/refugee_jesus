@@ -41,7 +41,7 @@ h2{
   padding: 0 0 3vh 0;
   width: 100%;
    position: absolute;
-   top: 22vw;
+   top: 18vw;
    left: 50%; 
    -webkit-transform: translate(-50%, -50%);
    -moz-transform: translate(-50%, -50%); 
@@ -50,8 +50,11 @@ h2{
    transform: translate(-50%, -50%); 
 }
 
-.header-container{
-  position: relative;
+#header-container{
+  background-color: #042B56;
+  & img{
+    width: 100%;
+  }
 }
 
 .title-text{
@@ -67,7 +70,7 @@ h2{
 1px 0px 0 $jesus-blue,
 0px -1px 0 $jesus-blue,
 -1px 0px 0 $jesus-blue,;
-  @media screen and(max-width: $break-small){
+  @media screen and(max-width: $break-large){
     font-size: 2em;
   }
 }
@@ -102,11 +105,12 @@ h2{
     width: 100%;
   }
   & .bible-quote{
+    max-width: 700px;
     width: 80%;
     position: absolute;
-    font-size: 3em;
+    font-size: 1.5em;
     color: white;
-    top: 40vw;
+    top: 30vw;
     left: 50%; 
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%); 
@@ -114,10 +118,17 @@ h2{
     -o-transform: translate(-50%, -50%); 
     transform: translate(-50%, -50%);
     & .attrib{
-      font-size: 0.5em;
+      font-size: 1em;
       font-weight: 700;
       text-align: right;
       margin-right: 5em;
+    }
+    @media screen and (max-width: 550px){
+      font-size: 1em;
+      // top: 20vw;
+      & .attrib{
+        // font-size: 0.5em;
+      }
     }
   }
 }
