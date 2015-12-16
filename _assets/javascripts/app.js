@@ -2,7 +2,7 @@
 
 var gw = new Groundwork({
     'api_url': 'https://api.thegroundwork.com',
-    'oauth_client_id': 'pub-un-test.jesus-was-a-refugee-test-int-MUEAS9X5941jPRczITpf0anqMFqunzzh6YAgImx0EUT18aBcBPIIVdEsx7wK4kcSibY3hpFhpv9H0_GgOUp4SA'
+    'oauth_client_id': 'pub-un.jesus-was-a-refugee-int-gdLg7Qe2LbLXcEVV2GxgKRzse6_D1Eb3I.dJkVKlTkwaQheidtD82Kk74pn625s9n.XYdCkYG6FHOYwx8JdRAQ'
 });
 
 var fields = { phone: null, city: null, state: null};
