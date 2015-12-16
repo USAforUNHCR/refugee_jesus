@@ -108,7 +108,7 @@ h2{
     max-width: 700px;
     width: 80%;
     position: absolute;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     top: 30vw;
     left: 50%; 
@@ -123,11 +123,18 @@ h2{
       text-align: right;
       margin-right: 5em;
     }
-    @media screen and (max-width: 550px){
-      font-size: 1em;
+    @media screen and (max-width: 900px){
+      font-size: 1.5em;
       // top: 20vw;
       & .attrib{
         // font-size: 0.5em;
+      }
+    }
+      @media screen and (max-width: 600px){
+      font-size: 1em;
+      // top: 20vw;
+      & .attrib{
+        font-size: 1em;
       }
     }
   }
